@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  font-family: monospace;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  max-width: 100%;
+  background-color: pink;
+  padding: 2rem;
+}
+
+.todo-list {
+  position: absolute;
+  left: 5rem;
+  width: 30%;
+}
+
+.done-list {
+  position: absolute;
+  right: 3rem;
+  width: 30%;
+}
+
+.button-container-temporarily {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.button-container-temporarily .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-style {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 57, 225, 0.183);
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.box-style p {
+  color: blue;
+  width: 80vw;
+}
+.box-style button {
+  margin-right: 2rem;
+  color: red;
+}
+.box-style:nth-child(even) {
+  background-color: rgba(38, 255, 0, 0.214);
+}
+
+input, button {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+input {
+  background-color: rgba(255, 0, 0, 0.567);
+  margin-bottom: 0.3rem;
+}
+
+button {
+  background-color: rgba(0, 128, 0, 0.316);
+  cursor: pointer;
+  height: 2rem;
+  border-radius: 0.2rem;
+  box-shadow: 0px 0px 3px 1px rgba(140, 133, 133, 0.428);
+  transition: transform 100ms;
+}
+button:active {
+  background-color: rgba(14, 47, 14, 0.578);
+}
+button:hover {
+  transform: scale(1.1);
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  padding: 5rem;
+}/*# sourceMappingURL=styles.css.map */
